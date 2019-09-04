@@ -1,28 +1,20 @@
-const mdLinks = require('../main.js');
-// const chai = require('chai');
+    const mdLinks = require('../cli.js');
+    const chai = require('chai');
+    const index = require('../index.js')
 
 
-// describe('mdLinks', () => {
+    describe('mdLinks', () => {
 
-//     it('Deberia ser una función', () => {
-//         expect(typeof mdLinks).toBe('function');
-//     });
-
-//     it('Deberia leer un archivo .md', () => {
-//         expect.assertions();
-//         return mdLinks(__dirname)
-//             .then((dir) => {
-//                 expect(dir).toContain('md-links.spec.js');
-//             })
-//             .catch((error) => {});
-//     });
+        it('Debería ser una función', () => {
+            expect(typeof mdLinks).toBe('function');
+        });
+    });
 
 
-// });
+    describe('index', () => {
 
-// __tests__/index.test.js
-describe('initial', () => {
-    test('first tests', () => {
-        expect(true).toBe(true)
-    })
-})
+        it('Debería ser una funcion', () => {
+            expect(typeof index).toBe('function');
+        });
+
+    });

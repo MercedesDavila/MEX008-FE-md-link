@@ -1,3 +1,6 @@
 #!/usr/bin/env node
 
-require('../MEX008-FE-md-link/index.js')()
+const fs = require('fs');
+const fetch = require('node-fetch');
+const path = require('path');
+const colors = require('colors');
