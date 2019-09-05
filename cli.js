@@ -14,7 +14,7 @@ const mdLink = (fileName) => new Promise((resolve, err) => {
         let dataMd = fs.readFileSync(urlToAbsolute).toString();
         let linksMd = [];
         const expRegLinks = /\[((.+?))\]\((http|https).+?\)/g;
-        const expRegHref = /\((http|https|ftp|ftps).+?\)/g;
+        const expRegHref = /\((http|https).+?\)/g;
         const expRegLinktext = /\[.+?\]/g;
         let dataLinks = dataMd.toString();
         let dataStrings = dataLinks.toString().match(expRegLinks);
