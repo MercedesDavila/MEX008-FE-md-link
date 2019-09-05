@@ -5,6 +5,7 @@
 -    [tutorial](https://agea.github.io/tutorial.md)
     
 -   [google](https://www.google.com/) 
+-   [google](https://www.google.com/) 
 
 -   [google](https://www.google.com/) 
     
@@ -12,7 +13,5 @@
 
 -    [roto](https://githu.com)
 
--    [roto2] (https://faceboo.com)
-
-
-> Written with [StackEdit](https://stackedit.io/).
+- [roto](https;//facebo.com)
+- [StackEdit](https://stackedt.io/).

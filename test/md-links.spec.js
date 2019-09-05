@@ -1,3 +1,4 @@
+    "use strict";
     const mdLinks = require('../cli.js');
     const chai = require('chai');
     const index = require('../index.js')
@@ -8,6 +9,7 @@
         it('Debería ser una función', () => {
             expect(typeof mdLinks).toBe('function');
         });
+
     });
 
 

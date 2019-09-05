@@ -1,7 +1,7 @@
 
 # Markdown Links
 
-## [](https://github.com/MercedesDavila/MEX008-FE-md-link#%C3%ADndice)Índice
+## [Indice](https://github.com/MercedesDavila/MEX008-FE-md-link#%C3%ADndice) Índice
 
 -   [1. Preámbulo](https://github.com/MercedesDavila/MEX008-FE-md-link#1-pre%C3%A1mbulo)
 -   [2. Resumen del proyecto](https://github.com/MercedesDavila/MEX008-FE-md-link#2-resumen-del-proyecto)
