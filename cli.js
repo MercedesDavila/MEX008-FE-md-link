@@ -13,7 +13,7 @@ const mdLink = (fileName) => new Promise((resolve, err) => {
     if (extFile === '.md') {
         let dataMd = fs.readFileSync(urlToAbsolute).toString();
         let linksMd = [];
-        const expRegLinks = /\[((.+?))\]\((http|https|ftp|ftps).+?\)/g;
+        const expRegLinks = /\[((.+?))\]\((http|https).+?\)/g;
         const expRegHref = /\((http|https|ftp|ftps).+?\)/g;
         const expRegLinktext = /\[.+?\]/g;
         let dataLinks = dataMd.toString();
