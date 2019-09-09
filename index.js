@@ -17,7 +17,7 @@ mdLinks(fileUser, options).then((response) => {
                 arrValidate.push(element);
 
                 if (res.status === 200) {
-                    return console.log(` File: ${element.file.blue} \n Link: ${res.url.cyan} \n Status: ${res.statusText.bgGreen} ${res.status}  ${element.text.yellow}`);
+                    return console.log(` File: ${element.file.magenta} \n Link: ${res.url.cyan} \n Status: ${res.statusText.bgGreen} ${res.status}  ${element.text.yellow}`);
                 } else if (res.status === 404) {
                     return console.log(` File: ${element.file.blue} \n Link: ${element.href.cyan}   \n Status: ${res.statusText.bgRed} ${res.status}  ${element.text.yellow}`);
 
@@ -43,7 +43,6 @@ mdLinks(fileUser, options).then((response) => {
             return console.log(file.blue + ' ' + text.yellow + ' ' + href.green);
         });
     }
-
 });
 
 module.exports = mdLinks;
