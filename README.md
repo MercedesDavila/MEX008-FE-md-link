@@ -1,4 +1,5 @@
 # Markdown Links.
+
 # Libreria `md-links-md`
 
 ## Introducción.
@@ -71,7 +72,7 @@ Para instalar el módulo en tu proyecto, debes posicionarte en la carpeta de est
     -   `validate`.
     -   `stats`.
 
-##### Valor de retorno
+##### Valor de retorno.
 
 La función retorna una promesa (`Promise`) que resuelve un arreglo (`Array`) de objetos (`Object`), donde cada objeto representa un link y contiene las siguientes propiedades:
 
@@ -79,7 +80,7 @@ La función retorna una promesa (`Promise`) que resuelve un arreglo (`Array`) de
 -   `text`: Texto que aparecía dentro del link (`<a>`).
 -   `file`: Ruta del archivo donde se encontró el link.
 -   `validate`: (opcional) OK si el link funciona y Fail si el link no funciona.
--  `stats`: (Opcional) retorna estadisticas basicas acerca de los links.
+-   `stats`: (Opcional) retorna estadisticas basicas acerca de los links.
 
 #### Por Ejemplo:
 
@@ -87,19 +88,23 @@ Si ingresamos a la terminal:
 `node index.js .\mockfiles\prueba.md`
 Obtenemos: 
 
+![Alt](https://github.com/MercedesDavila/MEX008-FE-md-link/blob/master/img/pruebamd.JPG?raw=true)
+
 
 Si ingresamos a la terminal la opción 'stats':
 `node index.js .\mockfiles\prueba.md --stats`
 Obtenemos: 
 
+![Alt](https://github.com/MercedesDavila/MEX008-FE-md-link/blob/master/img/prueba--stats.JPG?raw=true)
 
 Si ingresamos a la terminal la opción 'validate':
 `node index.js .\mockfiles\prueba.md --validate`
 Obtenemos:
 
+![Alt](https://github.com/MercedesDavila/MEX008-FE-md-link/blob/master/img/prueba--validate.JPG?raw=true)
 
 
-## Cuando md-links-md retorna un array vacío
+#### Cuando md-links-md retorna un array vacío
 
 `md-links-md`  puede retornar una promesa con un resolve de arreglo vacio en los siguientes casos:
 
@@ -107,13 +112,13 @@ Obtenemos:
 -   La ruta ingresada no contiene archivos del tipo markdown.
 -   La ruta ingresada no es válida.
 
-## Autores. :pencil2:
+## Autor. :pencil2:
 
 Este proyecto fue desarrollado e implementado por:
 
 -  **Mercedes Dávila Vázquez**  [Github](https://github.com/MercedesDavila/MEX008-FE-md-link)
 
-## Checklist
+## Checklist.:ballot_box_with_check:
 
 ### General
 
