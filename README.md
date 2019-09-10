@@ -29,8 +29,8 @@ Para este proyecto se siguio el siguiente plan de acción:
  - [x] Crear cuenta en NPM. 
  - [x] Crear archivo package.json.
  - [x] Vincular proyecto con NPM.
- - [ ] Versionar archivo package.json.
- - [ ] Subir archivos a NPM.
+ - [x] Versionar archivo package.json.
+ - [x] Subir archivos a NPM.
 
 ### Elegir Librerias.:newspaper:
 
@@ -38,15 +38,15 @@ Para este proyecto se siguio el siguiente plan de acción:
  - [x]  colors.
  - [x] path.
  - [x] fs.
- - [x] markdown-link-extractor.
+
 
 ### Boilerplate.:clipboard:
 
- - [ ] README.md.
- - [ ] index.js.
- - [ ] package.json. 
- - [ ] test/md-links.spec.js. 
- - [ ] mdLinks().
+ - [x] README.md.
+ - [x] index.js.
+ - [x] package.json. 
+ - [x] test/md-links.spec.js. 
+ - [x] mdLinks().
 
 ## - Planificación
 
@@ -57,33 +57,81 @@ Para la planificación se utilizo issues y milestones, revisar en el siguiente l
 
 Para instalar el módulo en tu proyecto, debes posicionarte en la carpeta de este e ingresar el siguiente comando en la terminal:
 
-npm install --save [https://github.com/MercedesDavila/MEX008-FE-md-link.git](https://github.com/MercedesDavila/MEX008-FE-md-link.git)
+ - **npm install**
+ [https://github.com/MercedesDavila/MEX008-FE-md-link.git](https://github.com/MercedesDavila/MEX008-FE-md-link.git)
+ 
+ - **npm install md-links-md**
+
+## ¿Como funciona md-links-md?
+
+#####  md-links-md recibe dos argumentos:
+
+-   `path`: Ruta absoluta o relativa al archivo o directorio.
+-   `options`: Un objeto con las siguientes propiedades:
+    -   `validate`.
+    -   `stats`.
+
+##### Valor de retorno
+
+La función retorna una promesa (`Promise`) que resuelve un arreglo (`Array`) de objetos (`Object`), donde cada objeto representa un link y contiene las siguientes propiedades:
+
+-   `href`: URL encontrada.
+-   `text`: Texto que aparecía dentro del link (`<a>`).
+-   `file`: Ruta del archivo donde se encontró el link.
+-   `validate`: (opcional) OK si el link funciona y Fail si el link no funciona.
+-  `stats`: (Opcional) retorna estadisticas basicas acerca de los links.
+
+#### Por Ejemplo:
+
+Si ingresamos a la terminal: 
+`node index.js .\mockfiles\prueba.md`
+Obtenemos: 
+
+
+Si ingresamos a la terminal la opción 'stats':
+`node index.js .\mockfiles\prueba.md --stats`
+Obtenemos: 
+
+
+Si ingresamos a la terminal la opción 'validate':
+`node index.js .\mockfiles\prueba.md --validate`
+Obtenemos:
+
+
+
+## Cuando md-links-md retorna un array vacío
+
+`md-links-md`  puede retornar una promesa con un resolve de arreglo vacio en los siguientes casos:
+
+-   La ruta ingresada no corresponde a un archivo tipo markdown (.md).
+-   La ruta ingresada no contiene archivos del tipo markdown.
+-   La ruta ingresada no es válida.
 
 ## Autores. :pencil2:
 
 Este proyecto fue desarrollado e implementado por:
 
--  **Mercedes Dávila Vázquez**  [MercedesDavila]
+-  **Mercedes Dávila Vázquez**  [Github](https://github.com/MercedesDavila/MEX008-FE-md-link)
 
 ## Checklist
 
 ### General
 
- - [ ] Puede instalarse via  `npm install --global <github-user>/md-links`.
+ - [x] Puede instalarse via  `npm install --global <github-user>/md-links`.
 
 ### README. md
 
  - [x] Colocar el pseudo código o diagrama de flujo con el algoritmo que soluciona el problema.
  - [x] Un board con el backlog para la implementación de la librería.
- - [ ] Documentación técnica de la librería.
- - [ ] Guía de uso e instalación de la librería
+ - [x] Documentación técnica de la librería.
+ - [x] Guía de uso e instalación de la librería
 
 ### API  `mdLinks(path, opts)`
 
- - [ ] El módulo exporta una función con la interfaz (API) esperada.
- - [ ] Implementa soporte para archivo individual.
- - [ ] Implementa soporte para directorios.
- - [ ] Implementa  `options.validate`.
+ - [x] El módulo exporta una función con la interfaz (API) esperada.
+ - [x] Implementa soporte para archivo individual.
+ - [x] Implementa soporte para directorios.
+ - [x] Implementa  `options.validate`.
 
 ### Pruebas / tests
 
@@ -92,10 +140,10 @@ Este proyecto fue desarrollado e implementado por:
 
 ### CLI
 
- - [ ] Expone ejecutable  `md-links`  en el path (configurado en  `package.json`).
- - [ ] Se ejecuta sin errores / output esperado.
- - [ ] Implementa  `--validate`.
- - [ ] Implementa  `--stats`.
+ - [x] Expone ejecutable  `md-links`  en el path (configurado en  `package.json`).
+ - [x] Se ejecuta sin errores / output esperado.
+ - [x] Implementa  `--validate`.
+ - [x] Implementa  `--stats`.
 
 ## Hacker Edition
 

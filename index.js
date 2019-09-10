@@ -20,8 +20,7 @@ mdLinks(fileUser, options).then((response) => {
                     return console.log(` File: ${element.file.magenta} \n Link: ${res.url.cyan} \n Status: ${res.statusText.bgGreen} ${res.status}  ${element.text.yellow}`);
                 } else if (res.status === 404) {
                     return console.log(` File: ${element.file.blue} \n Link: ${element.href.cyan}   \n Status: ${res.statusText.bgRed} ${res.status}  ${element.text.yellow}`);
-
-                } else { "Ingresa una opción valida" }
+                }
             }).catch(err => {
                 console.log(` File: ${element.file.blue} \n Link: ${element.href.bgRed} ${element.text.red}  <--- Enlace con Problemas`);
 
@@ -35,6 +34,7 @@ mdLinks(fileUser, options).then((response) => {
             urlArray.push(element.href)
         })
         console.log(`El total de links en el archivo ${fileUser.cyan} es: ${urlArray.length}`);
+
     } else {
         return response.forEach((element) => {
             let file = element.file,

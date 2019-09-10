@@ -9,14 +9,11 @@
         it('Debería ser una función', () => {
             expect(typeof mdLinks).toBe('function');
         });
-
     });
-
 
     describe('index', () => {
 
         it('Debería ser una funcion', () => {
             expect(typeof index).toBe('function');
         });
-
     });

@@ -1,6 +1,5 @@
 #!/usr/bin/env node
 
-
 const fs = require('fs');
 const fetch = require('node-fetch');
 const path = require('path');
@@ -32,7 +31,7 @@ const mdLink = (fileName) => new Promise((resolve, err) => {
         }
         resolve(linksMd);
         // console.log(linksMd)
-    } else { console.log('Archivo ingresado no es de extención .md'); }
+    } else { return console.log('Archivo ingresado no es de extención .md'); }
 });
 
 
