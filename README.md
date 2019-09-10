@@ -49,10 +49,38 @@ Para este proyecto se siguio el siguiente plan de acción:
  - [x] test/md-links.spec.js. 
  - [x] mdLinks().
 
-## - Planificación
+## - Planificación.✔
 
 Para la planificación se utilizo issues y milestones, revisar en el siguiente link:
 [mdLinksmd Markdown Planificación](https://github.com/MercedesDavila/MEX008-FE-md-link/projects/1).
+
+# Desarrollo. :computer:
+
+Herramientas utilizadas para el desarrollo de este proyecto:
+
+-   JavaScript.
+    
+-   Node.js.
+
+-   Npm.
+    
+
+Construido con:
+
+-   Visual Studio Code, editor de código fuente.
+
+## Otros recursos.:file_folder:
+
+Se utilizarón las siguientes librerias para el desarrollo de este proyecto: 
+
+ - [colors](https://www.npmjs.com/package/colors/v/1.3.3). Para personalizar los mensajes y evitar un gris que puede ser repetitivo.
+ 
+ - [ file-system](https://www.npmjs.com/package/file-system) . Para acceder a archivos en nuestra computadora.
+ 
+ - [node-fetch](https://www.npmjs.com/package/node-fetch). Proporciona una interfaz para acceder y manipular partes del canal HTTP.
+ 
+ - [path](https://www.npmjs.com/package/path). Trabajar con las rutas de los directorios.
+
 
 ## Instalación.:globe_with_meridians:
 
@@ -63,14 +91,14 @@ Para instalar el módulo en tu proyecto, debes posicionarte en la carpeta de est
  
  - **npm install md-links-md**
 
-## ¿Como funciona md-links-md?
+## ¿Como funciona md-links-md?:grey_question:
 
 #####  md-links-md recibe dos argumentos:
 
 -   `path`: Ruta absoluta o relativa al archivo o directorio.
 -   `options`: Un objeto con las siguientes propiedades:
     -   `validate`.
-    -   `stats`.
+    - `stats`.
 
 ##### Valor de retorno.
 
@@ -80,7 +108,7 @@ La función retorna una promesa (`Promise`) que resuelve un arreglo (`Array`) de
 -   `text`: Texto que aparecía dentro del link (`<a>`).
 -   `file`: Ruta del archivo donde se encontró el link.
 -   `validate`: (opcional) OK si el link funciona y Fail si el link no funciona.
--   `stats`: (Opcional) retorna estadisticas basicas acerca de los links.
+-  `stats`: (Opcional) retorna estadisticas basicas acerca de los links.
 
 #### Por Ejemplo:
 
